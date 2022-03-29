@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "433743322081",
+    "project_id": "myapp-5152a",
+    "storage_bucket": "myapp-5152a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433743322081:android:2971082416a1a9901550a0",
+        "android_client_info": {
+          "package_name": "com.example.retrofit_practice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433743322081-nierhj6poacpmj8dq8m5m31dk9t888ns.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy1cNL1GpgoSx5jU2wZWnlyx_ydScAIL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433743322081-nierhj6poacpmj8dq8m5m31dk9t888ns.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
