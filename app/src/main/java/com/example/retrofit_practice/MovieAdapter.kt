@@ -1,4 +1,5 @@
 package com.example.retrofit_practice
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,8 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 
 class MovieAdapter {
-    class CustomAdapter(private val mList: List<Result>?
-    ,val mItemClickListener: ItemClickListener) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
+    class CustomAdapter(
+        private val mList: List<Result>?, val mItemClickListener: ItemClickListener
+    ) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
         interface ItemClickListener {
             fun onItemClick(position: Int)
@@ -28,10 +30,11 @@ class MovieAdapter {
         // binds the list items to a view
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-           // val itemsViewModel = mList[position]
+            // val itemsViewModel = mList[position]
             val itemsViewModel = mList?.get(position)
 
-            Picasso.get().load("https://image.tmdb.org/t/p/w500" + itemsViewModel?.poster_path).into(holder.imageView)
+            Picasso.get().load("https://image.tmdb.org/t/p/w500" + itemsViewModel?.poster_path)
+                .into(holder.imageView)
 
             // sets the image to the imageview from our itemHolder class
 
@@ -49,7 +52,9 @@ class MovieAdapter {
 
             init {
                 ItemView.setOnClickListener {
-                    mItemClickListener.onItemClick(adapterPosition)
+                    mList?.get(layoutPosition)?.id?.let {
+                        mItemClickListener.onItemClick(it)
+                    }
                 }
             }
         }

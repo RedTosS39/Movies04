@@ -6,4 +6,7 @@
     <string name="i_forgot_username_or_password_text_view">I Forgot username or password</string>
     <string name="i_already_have_account_text_view">I already Have account</string>
     <string name="api_key">c5822a12fa740c5cd4ed818c615d0aac</string>
+    <string name="movie_details_description">Description</string>
+    <string name="movie_details_date">08 june 1988</string>
+    <string name="movie_details_title">Movies Title</string>
 </resources>
